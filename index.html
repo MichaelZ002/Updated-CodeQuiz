@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+
+    <!-- Linking Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Linking in personal CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header class="headerclass">
+        <div class="container">
+            <h1>The Supper Dupper Cool VideoGame QUIZ!</h1>
+        </div>
+    </header>
+
+    <main class="content-section">
+        <div class="container maincontainer card-body">
+            <div id="begin-text">
+                <p>Answer all the questions in time!</p>
+                <button type="button" id="startbutton" class="btn btn-success">
+                    Start
+                </button>
+            </div>
+        </div>
+
+        <!-- container to hold questions and answers -->
+        <div class="container hide" id="question-container">
+            <div id="questions">
+            </div>
+            <div id="btnAnswers">
+            </div>
+            <div id="answerMessage">
+            </div>
+        </div>
+
+        <!-- Ending message when user has answered all questions -->
+        <div id="leaderboardHead"></div>
+        <div id="endingMessage" class="container"></div>
+        <div id="finalBtns"></div>
+        <aside class="hide" id="countdown-timer">
+            <p>Seconds Left: <span id="timer">90</span></p>
+        </aside>
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
